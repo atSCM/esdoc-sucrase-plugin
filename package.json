@@ -1,6 +1,6 @@
 {
   "name": "esdoc-sucrase-plugin",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Transpile sources with sucrase before passing them to esdoc",
   "license": "MIT",
   "repository": {
