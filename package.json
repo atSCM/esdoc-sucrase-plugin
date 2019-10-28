@@ -2,8 +2,26 @@
   "name": "esdoc-sucrase-plugin",
   "version": "0.0.0",
   "description": "Transpile sources with sucrase before passing them to esdoc",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atSCM/esdoc-sucrase-plugin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/atSCM/esdoc-sucrase-plugin/issues"
+  },
+  "homepage": "https://github.com/atSCM/esdoc-sucrase-plugin#readme",
+  "author": "Lukas Hechenberger <npm@ls-age.com>",
+  "keywords": [
+    "esdoc",
+    "plugin",
+    "esdoc-plugin",
+    "sucrase",
+    "typescript",
+    "flow",
+    "flowtype"
+  ],
   "main": "out/index.js",
-  "types": "out/types/index.d.ts",
   "scripts": {
     "build": "sucrase src -d out --transforms typescript,imports --enable-legacy-babel5-module-interop",
     "format": "prettier --ignore-path .gitignore \"**/*\" \"!.gitignore\"",
@@ -11,8 +29,12 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "types": "tsc"
   },
-  "author": "Lukas Hechenberger <npm@ls-age.com>",
-  "license": "MIT",
+  "renovate": {
+    "extends": [
+      "@ls-age:automergeDev"
+    ]
+  },
+  "types": "out/types/index.d.ts",
   "dependencies": {
     "sucrase": "^3.10.1"
   },
