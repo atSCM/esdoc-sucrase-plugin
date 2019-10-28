@@ -28,7 +28,7 @@ orbs:
               command: echo "$NPM_TOKEN" > ../.npmrc
 
 jobs:
-  default:
+  install:
     executor: local/node
     steps:
       - checkout
