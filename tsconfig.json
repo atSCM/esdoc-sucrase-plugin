@@ -1,0 +1,14 @@
+{
+  "include": ["src/**/*"],
+  "compilerOptions": {
+    "lib": ["esnext"],
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "declarationDir": "out/types",
+    "declaration": true,
+    "emitDeclarationOnly": true
+  }
+}
