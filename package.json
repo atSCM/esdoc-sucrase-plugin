@@ -24,7 +24,7 @@
   "main": "out/index.js",
   "scripts": {
     "build": "sucrase src -d out --transforms typescript,imports --enable-legacy-babel5-module-interop",
-    "format": "prettier --ignore-path .gitignore \"**/*\" \"!.gitignore\"",
+    "format": "prettier --ignore-path .gitignore \"**/*\" \"!{.gitignore,CHANGELOG.md}\"",
     "lint": "eslint --ignore-path .gitignore --ext .js,.ts .",
     "test": "echo \"Error: no test specified\" && exit 1",
     "types": "tsc"
